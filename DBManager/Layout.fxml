@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="content.Controller">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox prefHeight="389.0" prefWidth="600.0">
+         <children>
+            <ListView fx:id="entityListe" onMouseClicked="#beispielRoutineDieVerknuepftWerdenKann" prefHeight="388.0" prefWidth="188.0" />
+            <VBox prefHeight="375.0" prefWidth="405.0">
+               <children>
+                  <HBox prefHeight="136.0" prefWidth="412.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="200.0" stroke="#ffffff00" strokeType="INSIDE" width="106.0" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           
+                        </ImageView>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="203.0" stroke="TRANSPARENT" strokeType="INSIDE" width="106.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="176.0" prefWidth="412.0">
+                     <children>
+                        <VBox prefHeight="172.0" prefWidth="178.0" styleClass="root">
+                           <children>
+                              <Label fx:id="labelTitel" prefHeight="17.0" prefWidth="334.0" styleClass="labels" text="Label" textFill="WHITE" />
+                              <Label fx:id="labelJahr" prefHeight="17.0" prefWidth="335.0" styleClass="labels" text="Label" textFill="WHITE" />
+                              <Label fx:id="labelStory" prefHeight="17.0" prefWidth="327.0" styleClass="labels" text="Label" textFill="WHITE" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="172.0" prefWidth="321.0" styleClass="root">
+                           <children>
+                              <Label fx:id="labelTitelInhalt" styleClass="labels" text="Label" textFill="WHITE" />
+                              <Label fx:id="labelJahrInhalt" styleClass="labels" text="Label" textFill="WHITE" />
+                              <Label fx:id="labelStoryInhalt" alignment="TOP_LEFT" prefHeight="116.0" prefWidth="276.0" styleClass="labels" text="Label" textFill="WHITE" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
